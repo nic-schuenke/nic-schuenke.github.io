@@ -1,27 +1,107 @@
-<!DOCTYPE	html>
-<html lang = "en">
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Gotcha</title>
-        <!-- <link href="css/style.css" rel="stylesheet">
-        <script src = "js/script.js"></script> -->
-    </head>
-   
-    <body>
-        <nav class= "navStyle">
-            <table class = "navigate">
-                <thead>
-                    <tr>
-                    <th>
-                        <!-- <a> <img class = "thumbnails" src="img/meme.png" alt="Lind Hall" width = "60" height = "40"></img></a> -->
-                    </th>
-                    </tr>
-                </thead>
-            </table>
-        </nav>
+        <title>Nic's Christmas List</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #2f552b;
+                color: #333;
+                margin: 0;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+            }
 
-        <h1>
-        HELLO WORLD
-        </h1>
+            h1 {
+                color: #d93025;
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+                margin-bottom: 30px;
+            }
+
+            .christmasList {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                max-width: 600px;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                background-color: #fff;
+            }
+
+            .christmasList li {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px;
+                border-bottom: 1px solid #ddd;
+                font-size: 16px;
+            }
+
+            .christmasList li:last-child {
+                border-bottom: none;
+            }
+
+            .christmasList li span {
+                font-weight: bold;
+                color: #555;
+            }
+
+            .christmasList li a {
+                text-decoration: none;
+                color: #007bff;
+                font-size: 14px;
+                background-color: #f9f9f9;
+                padding: 5px 10px;
+                border-radius: 4px;
+                border: 1px solid #ccc;
+                transition: all 0.3s;
+            }
+
+            .christmasList li a:hover {
+                background-color: #007bff;
+                color: #fff;
+                border-color: #007bff;
+            }
+
+            footer {
+                margin-top: 20px;
+                color: #aaa;
+                font-size: 12px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Welcome to Nic's Christmas List</h1>
+        <ul class="christmasList">
+            <li>
+                <span>Duvette Cover - Full/Queen </span>
+                <a href="https://www.amazon.com/Bedsure-T-Shirt-Bedding-Closure-Pillowcases/dp/B0BGS6LCRY/ref=sr_1_54?crid=267ZRFXFY055G&dib=eyJ2IjoiMSJ9.MyZ7cc_RmUmlNyp_0WQGh0dD3zwpKLNKYVwCJLBe8OhUIAnENQN69b2aGeweoDLGXeRi6gC6dWFPF7zN-eVvyNrW926Bx4JPz-A933N5dtm07UI_JhNij-8-qKLL3wkeDKIOE7xqq3XixA-oHChFPe0TfcA76caW36rJbe_ooibN6dJ_EzpxoaTbqzna8b8e_MxDJKB2KMJwG4Ys_tmnV0ta2QTO18V8DOeLocgyAHxl3jUVEXmsHu4TUjq2unHkX1-YD6EvTO4aLhV38MRTjRlfH004dlEATk-eXsm9SY0MTdtKO9qq8BEIx6YLJ0t1eW8ZB28Sed3Aqt-e--82PIgqa3hnUJ5mL-U12R6jAx7qoUFZebd-NvTMUSG-2uqQPFW4SvyUwyrRUjkd4aEbM8rqmPQ-a19XlkXBgY4x138WAXbnNLRaOa9KPE8CFunM.T6qThD23FpUr88khUNZrcHWHwcEX6ADaJZOuUDNjt6s&dib_tag=se&keywords=duvet%2Bcover%2Bfull&qid=1734200733&sprefix=duvet%2Bcovver%2Caps%2C167&sr=8-54&th=1" target="_blank">Details</a>
+            </li>
+            <li>
+                <span>Leggings Size 6</span>
+                <a href="https://shop.lululemon.com/p/womens-leggings/Align-Pant-Full-Length-28/_/prod8780551?color=60846" target="_blank">Details</a>
+            </li>
+            <li>
+                <span>Snow pants - White or Pink</span>
+                <a href="https://www.thenorthface.com/en-us/womens/womens-bottoms/womens-snow-bottoms-c213401/womens-freedom-insulated-bibs-pNF0A5AD2?color=QLI" target="_blank">Details</a>
+            </li>
+            <li>
+                <span>Overalls - Dark Brown</span>
+                <a href="https://www.carhartt.com/product/104049/womens-insulated-bibs---relaxed-fit---washed-duck---3-warmest-rating?categoryCode=" target="_blank">Details</a>
+            </li>
+            <li>
+                <span>Socks</span>
+                <a href="https://www.amazon.com/Gold-Toe-Womens-3-Pack-Bermuda/dp/B0073D1L5K/ref=sr_1_11_sspa?crid=3S1SYZJGUXR8R&dib=eyJ2IjoiMSJ9.xPvu0nFqpuaZIYmxnAFtlbNWruClnbkv2XI1DdNknm1Hughn2q9kbab_24NxDFYQYJfYDpCar53YVOAEyfsCdQ.u1XWbAp3bSgwo_kACCQjZpP1Vtg026CFuHozbX7gBAg&dib_tag=se&keywords=floral+goldtoes&qid=1734203154&sprefix=floral+goldtoes%2Caps%2C147&sr=8-11-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1" target="_blank">Details</a>
+            </li>
+        </ul>
+        <footer>More to come and made with ❤️ by Nic</footer>
     </body>
 </html>
